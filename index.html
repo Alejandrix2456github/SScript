@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SScript</title>
+    <style>
+        :root {
+            --py-blue: #3776ab;
+            --py-yellow: #ffd43b;
+            --aero-glass: rgba(255, 255, 255, 0.15);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Aurora background */
+            background-attachment: fixed;
+            color: white;
+        }
+
+        /* Top Aero Nav Bar */
+        nav {
+            background: rgba(43, 43, 43, 0.8);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-bottom: 3px solid var(--py-yellow);
+        }
+
+        .nav-item {
+            color: #ccc;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Hero Header (Python Style) */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .logo-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        /* The "Glass" Python Box */
+        .main-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--aero-glass);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Console styling from your image */
+        .console {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            border-left: 5px solid var(--py-yellow);
+            margin-top: 20px;
+        }
+
+        .prompt { color: #5ef75e; } /* Green prompt like your screenshot */
+        .keyword { color: var(--py-yellow); }
+
+        .btn-aero {
+            background: linear-gradient(to bottom, #4a90e2, #357abd);
+            border: 1px solid #2a5298;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#" class="nav-item">About</a>
+    <a href="#" class="nav-item">Downloads</a>
+    <a href="#" class="nav-item">Documentation</a>
+    <a href="#" class="nav-item">Community</a>
+</nav>
+
+<div class="hero">
+    <div class="logo-text">sscript<span style="color:var(--py-yellow)">™</span></div>
+    <p>The programming language that lets you work quickly and integrate systems effectively.</p>
+</div>
+
+<div class="main-container">
+    <h2>Standalone Binary Compilation</h2>
+    <p>SScript 1.0-gitrc targets high-performance execution by transpiling directly to C++ 20.</p>
+    
+    <div class="console">
+        <span class="prompt">>>></span> <span class="keyword">var</span> user = System.user();<br>
+        <span class="prompt">>>></span> Net.fetch("https://cdn.jsdelivr.net", "lib.js");<br>
+        <span class="prompt">>>></span> print("Build Complete");<br>
+        [SUCCESS] Created binary: ./testing
+    </div>
+
+    <div style="text-align: center;">
+        <a href="https://github.com/youruser/sscript" class="btn-aero">Learn More >>></a>
+    </div>
+</div>
+
+</body>
+</html>
