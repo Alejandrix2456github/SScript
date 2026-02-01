@@ -39,3 +39,19 @@
 
 # debug information files
 *.dwo
+
+# Sscript Build Artifacts
+*_tmp.cpp
+sscript_build.cpp
+
+# Compiled Binaries (Linux/macOS/Windows)
+testing
+get_lib
+fetch_script
+*.exe
+*.out
+*.o
+
+# Python Cache
+__pycache__/
+*.py[cod]
